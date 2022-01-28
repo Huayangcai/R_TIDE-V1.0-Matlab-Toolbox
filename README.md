@@ -50,7 +50,7 @@ For instance:
 
 'WH'
 
-`ZQ` denotes hourly data used for harmonic analysis. The data in 1st column demotes the time series of the input data in term of ‘datenum’. The data in 2nd and 7th column denotes the water level series observed in the tidal stations mentioned above (e.g.: There are 6 columns of water levels in this variable, the data in 2nd column represent the water levels in TSG and the data in 7th column represent the water levels in WH). The data in  8th column denotes hourly river discharge data used for harmonic analysis.
+`ZQ` denotes hourly data used for harmonic analysis. The data in the 1st column demotes the time series of the input data in term of ‘datenum’. The data between the 2nd and the 7th column denotes the water level series observed in the tidal stations mentioned above. For instance, there are 6 columns of water levels in this variable, the data in the 2nd column represents the water levels in TSG and the data in the 7th column represent the water levels in WH. The data in the 8th column denotes hourly river discharge data used for harmonic analysis.
 
 For instance:
 
@@ -66,11 +66,7 @@ For instance:
 
 ……
 
-Descriptions of the input variables in file `Data_Yangtze_river.mat`:
 
-`stname`: the name of tidal gauging stations
-
-`ZQ`: hourly data used for harmonic analysis, including hourly river discharge and water level data used for harmonic analysis as well as the corresponding time series.
 
 
 The syntax of the main subroutine is illustrated below:
