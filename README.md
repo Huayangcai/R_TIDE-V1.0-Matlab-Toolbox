@@ -5,7 +5,7 @@ Huayang Cai
 Institute of Estuarine and Coastal Research, School of Ocean Engineering and Technology, Sun Yat-sen University, Guangzhou, 510275, China
 Correspondence: Huayang Cai (caihy7@mail.sysu.edu.cn)
 
-2022/01/27
+2022/01/28
 
 
 A data-driven model to quantify the impact of river discharge on tide-river dynamics in river deltas.
@@ -32,6 +32,47 @@ https://github.com/Huayangcai/R_TIDE-V1.0-Matlab-Toolbox.git
 2.1.	Harmonic analysis driven by river discharge
 
 First of all, you need to load data provided by R_TIDE Toolbox (such as `Data_Yangtze_river.mat`). The demo can be executed using the main program labelled by `R_demo_Yangtze.m`.
+
+The data file `Data_Yangtze_river.mat` contains 2 variables, including `stname` and `ZQ`. 
+
+`stname` denotes the name of tidal gauging stations, including 6 columns (e.g., TSG, JY, ZJ, NJ, MAS, WH, respectively). 
+For instance:
+
+'TSG'
+
+'JY'
+
+'ZJ'
+
+'NJ'
+
+'MAS'
+
+'WH'
+
+`ZQ` denotes hourly data used for harmonic analysis. The data in 1st column demotes the time series of the input data in term of ‘datenum’. The data in 2nd and 7th column denotes the water level series observed in the tidal stations mentioned above (e.g.: There are 6 columns of water levels in this variable, the data in 2nd column represent the water levels in TSG and the data in 7th column represent the water levels in WH). The data in  8th column denotes hourly river discharge data used for harmonic analysis.
+
+For instance:
+
+731217.166666667	0.7818	-0.0565	1.4980	2.1796	1.9357	2.2544	12731.5430
+
+731217.208333333	1.2703	0.6749	0.3553	1.3052	1.8316	2.1548	12770.1389
+
+731217.250000000	1.4570	1.2471	0.1852	0.8740	1.7609	2.0815	12806.2174
+
+731217.291666667	1.3719	1.5003	0.6139	0.7844	1.7172	2.0306	12839.8438
+
+731217.333333333	1.1476	1.4408	1.2681	0.9349	1.6940	1.9980	12871.0829
+
+……
+
+Descriptions of the input variables in file `Data_Yangtze_river.mat`:
+
+`stname`: the name of tidal gauging stations
+
+`ZQ`: hourly data used for harmonic analysis, including hourly river discharge and water level data used for harmonic analysis as well as the corresponding time series.
+
+
 The syntax of the main subroutine is illustrated below:
 
 [nameu,fu,yout,st,ft,Eta,Phi,percent,si,cof]=R_tide(xin,Q,T,lat1,ray,synth,Qc,twin,sname,ipso,ipre);
