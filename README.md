@@ -50,7 +50,7 @@ For instance:
 
 'WH'
 
-`ZQ` denotes hourly data used for harmonic analysis. The data in the 1st column demotes the time series of the input data in term of ‘datenum’. The data between the 2nd and the 7th column denotes the water level series observed in the tidal stations mentioned above. For instance, there are 6 columns of water levels in this variable, the data in the 2nd column represents the water levels in TSG and the data in the 7th column represent the water levels in WH. The data in the 8th column denotes hourly river discharge data used for harmonic analysis.
+`ZQ` denotes hourly data used for harmonic analysis. The data in the 1st column denote the time series of the input data in term of ‘datenum’. The data between the 2nd and the 7th column denote the water level series observed in the tidal stations mentioned above. For instance, there are 6 columns of water levels in this variable, the data in the 2nd column represent the water levels in TSG and the data in the 7th column represent the water levels in WH. The data in the 8th column denote hourly river discharge data used for harmonic analysis.
 
 For instance:
 
