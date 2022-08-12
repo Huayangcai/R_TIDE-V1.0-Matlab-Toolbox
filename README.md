@@ -19,7 +19,7 @@ Email contacts: caihy7@mail.sysu.edu.cn
 
 How to cite:
 
-- Huayang Cai, Bo Li, Erwan Garel, Tongtiegang Zhao, Feng Liu, and Suying Ou (2022), A data-driven model to quantify the impact of river discharge on tide-river dynamics in the Yangtze River estuary, Water Resources Research, submitted
+- Huayang Cai, Bo Li, Erwan Garel, Tongtiegang Zhao, Feng Liu, and Suying Ou (2022), A data-driven model to quantify the impact of river discharge on tide-river dynamics in the Yangtze River estuary, Journal of Hydrology, submitted
 
 How to use R_TIDE
 
