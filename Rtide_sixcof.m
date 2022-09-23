@@ -20,7 +20,7 @@
        x4(:,m)=Q1(:,ones(1,length(m))).*x2(:,m);
        pr1(m)=pr(i);
      end
-     m=find(q1>Qc(1,2));x1(m,:)=0;x2(m,:)=0;x3(m,:)=0;x4(m,:)=0; %%(杩欓噷鎴戞敼浜嗭紙1锛?2锛夛紝---leebok)
+     m=find(q1>Qc(1,2));x1(m,:)=0;x2(m,:)=0;x3(m,:)=0;x4(m,:)=0; 
        xx=[ones(length(x1),1) q1.^pl  x1 x2 x3 x4];
        y=z1;b = regress(y,xx);y1=xx*b; %regression model to determine coefficients d and a
 
